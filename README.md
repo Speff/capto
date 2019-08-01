@@ -1,6 +1,8 @@
 # Introduction
 A tool for Discord server admins to auto-post messages tweeted out or favorited by specified users. An alternative for those who don't want a in-server bot to perform the same function and more flexible than IFTTT.
 
+Hosted here - [https://0x-ia.moe/capto](https://0x-ia.moe/capto/)
+
 # Index
 
 - [About](#beginner-about)
