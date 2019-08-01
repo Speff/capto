@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+    web:
+        container_name: discord_auto_web
+        build: './web'
+        ports:
+            - 80:80
+        volumes:
+            - '/home/speff/dev/discord_autopost/web/nginx:/etc/nginx'
+            - '/home/speff/dev/discord_autopost/web/www:/usr/share/nginx/html'
+        restart: always
+    app:
+        container_name: discord_auto_app
+        build: './app'
+        ports:
+            - 1123:1123
+        volumes:
+            - '/home/speff/dev/discord_autopost/app/src:/usr/src/app'
+        env_file: app.env
+        restart: always
+    db:
+        container_name: discord_auto_db
+        ports:
+            - 5432:5432
+        environment:
+            - POSTGRES_USER=da_user
+            - POSTGRES_PASSWORD=docker
+            - POSTGRES_DB=da_db
+        build: './db'
+        restart: always

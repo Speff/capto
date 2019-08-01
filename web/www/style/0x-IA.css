@@ -1,0 +1,49 @@
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer-signature{
+    text-align: right;
+}
+
+
+#signin_box{
+}
+
+#signin_message>a{
+    color: #00bcd4;
+    border-bottom: 1px solid #00aeb6;
+}
+
+#signin_message>a:hover{
+    color: #454545;
+    background: #00bcd4;
+    border-bottom: 1px solid #00aeb6;
+}
+
+label.no_border{
+    border-bottom: 0px;
+}
+
+button[name='s_fav']{
+    margin-left: .5em;
+}
+
+.frame_hide{
+    display: none;
+    position:absolute;
+    top:-1px;
+    left:-1px;
+    width:1px;
+    height:1px;
+}
+
+.btn-grab{
+    cursor: pointer;
+}
+
+.menu-item{
+    margin-top: 5px;
+}
